@@ -36,6 +36,23 @@ export default new Router({
                 path: "/zuoyi3",
                 component: () =>
                     import ('./components/zuoyi/zuoyi3.vue')
+            },
+            {
+                path: "/zuoer1",
+                component: () =>
+                    import ('./components/zuoer/zuoer1.vue')
+            }, {
+                path: "/zuoer2",
+                component: () =>
+                    import ('./components/zuoer/zuoer2.vue')
+            }, {
+                path: "/zuoer3",
+                component: () =>
+                    import ('./components/zuoer/zuoer3.vue')
+            }, {
+                path: "/zuoer4",
+                component: () =>
+                    import ('./components/zuoer/zuoer4.vue')
             }
         ]
     }]

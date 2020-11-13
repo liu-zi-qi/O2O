@@ -83,20 +83,14 @@
             </el-submenu>
             <el-submenu index="2">
               <template slot="title">
-                <i class="el-icon-menu"></i>导航二
+                <i class="el-icon-menu"></i>订单管理
               </template>
-              <el-menu-item-group>
-                <template slot="title">分组一</template>
-                <el-menu-item index="2-1">选项1</el-menu-item>
-                <el-menu-item index="2-2">选项2</el-menu-item>
-              </el-menu-item-group>
-              <el-menu-item-group title="分组2">
-                <el-menu-item index="2-3">选项3</el-menu-item>
-              </el-menu-item-group>
-              <el-submenu index="2-4">
-                <template slot="title">选项4</template>
-                <el-menu-item index="2-4-1">选项4-1</el-menu-item>
-              </el-submenu>
+                <el-menu-item index="2-1"><router-link tag="p" to="/zuoer1">1</router-link></el-menu-item>
+                <el-menu-item index="2-2"><router-link tag="p" to="/zuoer2">2</router-link></el-menu-item>
+                <el-menu-item index="2-3"><router-link tag="p" to="/zuoer3">3</router-link></el-menu-item>
+                <el-menu-item index="2-4"><router-link tag="p" to="/zuoer4">4</router-link></el-menu-item>
+                <el-menu-item index="2-5">选项5</el-menu-item>
+                <el-menu-item index="2-6">选项6</el-menu-item>
             </el-submenu>
             <el-submenu index="3">
               <template slot="title">

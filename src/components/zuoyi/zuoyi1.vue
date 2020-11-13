@@ -24,7 +24,7 @@
           <br />
           <p>请先验证消费劵，再接待</p>
           <el-input v-model="input" class="input" placeholder="请输入内容"></el-input>&nbsp;&nbsp;
-          <input class="button" type="button" value="验证消费劵" />
+           <el-button type="text" @click="open">验证消费劵</el-button>
         </el-row>
       </el-tab-pane>
       <el-tab-pane label="消费劵批量验证" name="second"><el-row class="demo-autocomplete">
@@ -45,8 +45,8 @@
           <br />
           <p>请先验证消费劵，再接待</p>
           <el-input v-model="input" class="input" placeholder="请输入内容"></el-input>&nbsp;&nbsp;<br/><br/><br/><br/>
-          <img src="../../assets/img/7.png">
-          <input class="button" type="button" value="验证消费劵" />
+          <img src="../../assets/img/7.png"><br/><br/>
+          <el-button type="text" @click="open">验证消费劵</el-button>
         </el-row>
         </el-tab-pane>
       <el-tab-pane label="超级验证" name="third">
@@ -68,7 +68,7 @@
           <br />
           <p>请先验证消费劵，再接待</p>
           <el-input v-model="input" class="input" placeholder="请输入内容"></el-input>&nbsp;&nbsp;
-          <input class="button" type="button" value="验证消费劵" />
+          <el-button type="text" @click="open">验证消费劵</el-button>
         </el-row>
       </el-tab-pane>
     </el-tabs>
@@ -116,10 +116,17 @@ export default {
   },
   mounted() {
     this.restaurants = this.loadAll();
-  }
+  },
+   methods: {
+      open() {
+        this.$alert('错误', '错误', {
+          confirmButtonText: '确定',
+        });
+      }
+    }
 };
 </script>
-<style scoped>
+<style >
 * {
   padding: 0;
 }
@@ -141,6 +148,34 @@ export default {
 .el-tab-pane p {
   margin: 30px 0;
 }
+.el-button{
+  background-color: #ff9900!important;
+  color: #fff!important;
+  width: 150px;
+  height: 40px;
+}
+.el-message-box__header{
+  background-color: #ff9900!important;
+}
+.el-message-box__header span{
+  color: #fff!important;
+}
+.el-message-box__message{
+  text-align: center!important;
+}
+.el-tabs__item{
+   text-align: center!important;
+   float: none;
+   border-radius: 5px;
+   padding: 0 10px!important;
+   background-color: #f8f8f8;
+}
+.el-tabs__item.is-active{
+  background-color: #ff9900!important;
+  color: #fff!important;
+ 
+}
+
 #shang {
   width: 1100px;
   height: 40px;
