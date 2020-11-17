@@ -180,10 +180,13 @@ export default {
   width: 1100px;
   height: 40px;
   line-height: 40px;
+   position: relative;
+     left: 30px;;
 }
 #shang div {
   height: 30px;
   position: relative;
   top: 5px;
+
 }
 </style>

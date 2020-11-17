@@ -53,6 +53,26 @@ export default new Router({
                 path: "/zuoer4",
                 component: () =>
                     import ('./components/zuoer/zuoer4.vue')
+            }, {
+                path: "/zuoer5",
+                component: () =>
+                    import ('./components/zuoer/zuoer5.vue')
+            }, {
+                path: "/zuoer51",
+                component: () =>
+                    import ('./components/zuoer/zuoer51.vue')
+            }, {
+                path: "/zuoer6",
+                component: () =>
+                    import ('./components/zuoer/zuoer6.vue')
+            }, {
+                path: "/zuoer61",
+                component: () =>
+                    import ('./components/zuoer/zuoer61.vue')
+            }, {
+                path: "/zuosan1",
+                component: () =>
+                    import ('./components/zuosan/zuosan1.vue')
             }
         ]
     }]

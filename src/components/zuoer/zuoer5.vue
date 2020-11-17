@@ -30,6 +30,11 @@
             <el-table-column prop="name" label="消费时间" width="180"></el-table-column>
             <el-table-column prop="address" label="消费门店"></el-table-column>
             <el-table-column prop="address" label="状态"></el-table-column>
+            <el-table-column flxed="right" label="详情">
+              <template>
+                  <router-link tag="p" to="/zuoer51">详情</router-link>
+              </template>
+            </el-table-column>
           </el-table>
           <tr style="text-align:center">
             <p>
@@ -148,3 +153,6 @@ export default {
   }
 };
 </script>
+
+
+

@@ -85,29 +85,55 @@
               <template slot="title">
                 <i class="el-icon-menu"></i>订单管理
               </template>
-                <el-menu-item index="2-1"><router-link tag="p" to="/zuoer1">1</router-link></el-menu-item>
-                <el-menu-item index="2-2"><router-link tag="p" to="/zuoer2">2</router-link></el-menu-item>
-                <el-menu-item index="2-3"><router-link tag="p" to="/zuoer3">3</router-link></el-menu-item>
-                <el-menu-item index="2-4"><router-link tag="p" to="/zuoer4">4</router-link></el-menu-item>
-                <el-menu-item index="2-5">选项5</el-menu-item>
-                <el-menu-item index="2-6">选项6</el-menu-item>
+              <el-menu-item index="2-1">
+                <router-link tag="p" to="/zuoer1">1</router-link>
+              </el-menu-item>
+              <el-menu-item index="2-2">
+                <router-link tag="p" to="/zuoer2">2</router-link>
+              </el-menu-item>
+              <el-menu-item index="2-3">
+                <router-link tag="p" to="/zuoer3">3</router-link>
+              </el-menu-item>
+              <el-menu-item index="2-4">
+                <router-link tag="p" to="/zuoer4">4</router-link>
+              </el-menu-item>
+              <el-menu-item index="2-5">
+                <router-link tag="p" to="/zuoer5">5</router-link>
+              </el-menu-item>
+              <el-menu-item index="2-6">
+                <router-link tag="p" to="/zuoer6">6</router-link>
+              </el-menu-item>
             </el-submenu>
             <el-submenu index="3">
               <template slot="title">
-                <i class="el-icon-setting"></i>导航三
+                <i class="el-icon-setting"></i>评论管理
               </template>
-              <el-menu-item-group>
-                <template slot="title">分组一</template>
-                <el-menu-item index="3-1">选项1</el-menu-item>
-                <el-menu-item index="3-2">选项2</el-menu-item>
-              </el-menu-item-group>
-              <el-menu-item-group title="分组2">
-                <el-menu-item index="3-3">选项3</el-menu-item>
-              </el-menu-item-group>
-              <el-submenu index="3-4">
-                <template slot="title">选项4</template>
-                <el-menu-item index="3-4-1">选项4-1</el-menu-item>
-              </el-submenu>
+              <el-menu-item index="3-1">
+                <router-link tag="p" to="/zuosan1">1</router-link>
+              </el-menu-item>
+              <el-menu-item index="3-2">
+                <router-link tag="p" to="/zuosan1">1</router-link>
+              </el-menu-item>
+              <el-menu-item index="3-3">
+                <router-link tag="p" to="/zuosan1">1</router-link>
+              </el-menu-item>
+              <el-menu-item index="3-4">
+                <router-link tag="p" to="/zuosan1">1</router-link>
+              </el-menu-item>
+            </el-submenu>
+           
+            <el-submenu index="4">
+              <template slot="title">
+                <i class="el-icon-setting"></i>项目管理
+              </template>
+              <el-menu-item index="4-1">s
+              </el-menu-item>
+              <el-menu-item index="4-2">
+              </el-menu-item>
+              <el-menu-item index="4-3">
+              </el-menu-item>
+              <el-menu-item index="4-4">
+              </el-menu-item>
             </el-submenu>
           </el-menu>
         </el-aside>

@@ -22,15 +22,43 @@
       <br />
       <div id="xia">
         <table class="tab">
-          <el-table :data="tableData" border style="width: 100%">
-            <el-table-column prop="date" label="优惠券名称" width="180"></el-table-column>
-            <el-table-column prop="name" label="会员" width="180"></el-table-column>
-            <el-table-column prop="address" label="领取时间"></el-table-column>
-            <el-table-column prop="date" label="过期时间" width="180"></el-table-column>
-            <el-table-column prop="name" label="消费时间" width="180"></el-table-column>
-            <el-table-column prop="address" label="消费门店"></el-table-column>
-            <el-table-column prop="address" label="状态"></el-table-column>
-          </el-table>
+          <!-- tr列0td行 -->
+          <tr>
+            <td class="td1">详情</td>
+            <td class="td2">发票信息</td>
+            <td class="td3">红包</td>
+            <td class="td4">优惠券</td>
+            <td class="td5">结算金额</td>
+            <td class="td6">数量</td>
+            <td class="td7">状态</td>
+          </tr>
+          <tr>
+            <p>
+              订单号：
+              <span>2018122800300557</span>，交易时间：
+              <span>2018-12-28 00:30:05</span>
+            </p>
+          </tr>
+
+          <tr>
+            <td class="td1">
+              <img src="../../assets/img/8.png" />
+              <p>
+                团购商品名称
+                <br />下单会员：shiyue
+                <br />手机号：18800000000
+                <br />
+              </p>
+            </td>
+            <td class="td2 tdd">不开发票</td>
+            <td class="td3 tdd">0</td>
+            <td class="td4 tdd">0</td>
+            <td class="td5 tdd">140</td>
+            <td class="td6 tpp">1</td>
+            <td class="td7 tpp">
+             <router-link tag="p" to="/zuoer61">详情</router-link>
+            </td>
+          </tr>
           <tr style="text-align:center">
             <p>
               共
@@ -84,13 +112,97 @@
         </table>
       </div>
     </div>
+   
   </div>
 </template>
 <style scoped>
 #quan {
   width: 100%;
 }
+.yin tr {
+  background-color: #fff !important;
+  width: 400px !important;
+  margin: 0 auto;
+  box-shadow: 0 0 0 0.2px;
+}
 
+.dian {
+  width: 60px;
+  text-align: center;
+  height: 30px;
+  color: #fff;
+  border: 5px;
+  padding: 10px 20px;
+  background-color: rgb(5, 164, 50);
+}
+
+.tab {
+  width: 100%;
+  border: 1px solid;
+}
+.tab tr {
+  display: flex;
+}
+
+.td1 {
+  flex: 3;
+}
+.td2,
+.td3,
+.td4,
+.td5,
+.td6,
+.td7 {
+  flex: 1;
+}
+tr:nth-of-type(even) {
+  background-color: #f3ff0928;
+}
+tr:nth-of-type(even) p {
+  width: 100%;
+  text-indent: 2%;
+  margin: 1% 0;
+}
+tr:nth-of-type(even) p span {
+  color: #ff9900;
+}
+.td1,
+.td2,
+.td3,
+.td4,
+.td5,
+.td6,
+.td7 {
+  height: 90px;
+}
+.td1 img {
+  margin: 10px 10px;
+  float: left;
+}
+.td1 p {
+  margin: 15px 0;
+  font-size: 15px;
+}
+.td2,
+.td3,
+.td4,
+.td5 {
+  color: #ff9900;
+  text-align: center;
+}
+.tab tr:nth-of-type(1) {
+  background-color: #c4c1c17b;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.tdd {
+  line-height: 90px;
+}
+.tpp {
+  text-align: center;
+  line-height: 90px;
+}
 #liebiao {
   padding: 0 40px;
 }
@@ -119,32 +231,7 @@
 </style>
 <script>
 export default {
-  name: "zuoer4",
-  data() {
-    return {
-      tableData: [
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄"
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄"
-        },
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: ' <router-link tag="p" to></router-link>'
-        }
-      ]
-    };
-  }
+  name: "zuoer6",
+  
 };
 </script>
