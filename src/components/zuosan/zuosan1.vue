@@ -18,6 +18,7 @@
         </select>
         <input type="button" value="确定" class="btn" />
       </div>
+
       <table>
         <tr class="tr1">
           <td class="td1">评论星级</td>
@@ -42,9 +43,13 @@
           </td>
           <td class="td3">十月大神</td>
           <td class="td4">被评论来源</td>
-          <td class="td5"><div class="p"><el-button type="text" @click="open">回复</el-button></div></td>
+          <td class="td5">
+            <div class="p">
+              <el-button type="text" @click="open">回复</el-button>
+            </div>
+          </td>
         </tr>
-          <tr>
+        <tr>
           <td class="td1">
             <el-rate
               v-model="value"
@@ -60,9 +65,13 @@
           </td>
           <td class="td3">十月大神</td>
           <td class="td4">被评论来源</td>
-          <td class="td5"><div class="p"><el-button type="text" @click="open">回复</el-button></div></td>
+          <td class="td5">
+            <div class="p">
+              <el-button type="text" @click="open">回复</el-button>
+            </div>
+          </td>
         </tr>
-          <tr>
+        <tr>
           <td class="td1">
             <el-rate
               v-model="value"
@@ -78,14 +87,17 @@
           </td>
           <td class="td3">十月大神</td>
           <td class="td4">被评论来源</td>
-          <td class="td5"><div class="p"><el-button type="text" @click="open">回复</el-button></div></td>
+          <td class="td5">
+            <div class="p">
+              <el-button type="text" @click="open">回复</el-button>
+            </div>
+          </td>
         </tr>
       </table>
     </div>
   </div>
 </template>
 <style scoped>
-
 .el-rate {
   height: 30px;
 }
@@ -98,33 +110,34 @@ table {
   margin: 0 auto;
   margin-top: 50px;
 }
-tr{
-    width: 100%;
-    
-   box-shadow: 0 0 0 0.2px; 
+tr {
+  width: 100%;
+
+  box-shadow: 0 0 0 0.2px;
 }
-.p .el-button--text{
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
-    background-color: rgba(45, 208, 50, 0.68);
-    text-align: center;
-    color: #fff;
-    padding: 5px 0;
+.p .el-button--text {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: rgba(45, 208, 50, 0.68);
+  text-align: center;
+  color: #fff;
+  padding: 5px 0;
 }
 .tr1 {
   text-align: center;
   height: 40px;
   background-color: rgb(179, 175, 175);
 }
-.td3,.td4{
-    text-align: center;
+.td3,
+.td4 {
+  text-align: center;
 }
-.td4{
-    color: #ff9900;
+.td4 {
+  color: #ff9900;
 }
-.tr1 .td4{
-    color:black
+.tr1 .td4 {
+  color: black;
 }
 #biao #sang {
   width: 84%;
@@ -160,16 +173,16 @@ export default {
     };
   },
   methods: {
-      open() {
-        this.$prompt('', '评论内容', {
-          confirmButtonText: '确定',
-        }).then(({ value }) => {
-          this.$message({
-            type: 'success',
-            message: '评论成功'
-          });
+    open() {
+      this.$prompt("", "评论内容", {
+        confirmButtonText: "确定"
+      }).then(({ value }) => {
+        this.$message({
+          type: "success",
+          message: "评论成功"
         });
-      }
+      });
     }
+  }
 };
 </script>

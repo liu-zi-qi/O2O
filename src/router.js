@@ -73,6 +73,22 @@ export default new Router({
                 path: "/zuosan1",
                 component: () =>
                     import ('./components/zuosan/zuosan1.vue')
+            }, {
+                path: "/zuosi1",
+                component: () =>
+                    import ('./components/zuosi/zuosi1.vue')
+            }, {
+                path: "/zuosi2",
+                component: () =>
+                    import ('./components/zuosi/zuosi2.vue')
+            }, {
+                path: "/zuosi3",
+                component: () =>
+                    import ('./components/zuosi/zuosi3.vue')
+            }, {
+                path: "/zuosi4",
+                component: () =>
+                    import ('./components/zuosi/zuosi4.vue')
             }
         ]
     }]

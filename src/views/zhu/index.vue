@@ -66,7 +66,7 @@
     <div id="zhuyao">
       <el-container style="height: 690px; border: 1px solid #eee">
         <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-          <el-menu :default-openeds="['1', '4']">
+          <el-menu :default-openeds="['1','2','3','5', '4','6', '7']">
             <el-submenu index="1">
               <template slot="title">
                 <i class="el-icon-message"></i>验证管理
@@ -121,18 +121,22 @@
                 <router-link tag="p" to="/zuosan1">1</router-link>
               </el-menu-item>
             </el-submenu>
-           
+
             <el-submenu index="4">
               <template slot="title">
                 <i class="el-icon-setting"></i>项目管理
               </template>
-              <el-menu-item index="4-1">s
+              <el-menu-item index="4-1">
+                <router-link tag="p" to="/zuosi1">1</router-link>
               </el-menu-item>
               <el-menu-item index="4-2">
+                <router-link tag="p" to="/zuosi2">1</router-link>
               </el-menu-item>
               <el-menu-item index="4-3">
+                <router-link tag="p" to="/zuosi3">1</router-link>
               </el-menu-item>
               <el-menu-item index="4-4">
+                <router-link tag="p" to="/zuosi4">1</router-link>
               </el-menu-item>
             </el-submenu>
           </el-menu>
