@@ -89,6 +89,14 @@ export default new Router({
                 path: "/zuosi4",
                 component: () =>
                     import ('./components/zuosi/zuosi4.vue')
+            }, {
+                path: "/zuowu1",
+                component: () =>
+                    import ('./components/zuowu/zuowu1.vue')
+            }, {
+                path: "/zuowu2",
+                component: () =>
+                    import ('./components/zuowu/zuowu2.vue')
             }
         ]
     }]

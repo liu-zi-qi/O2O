@@ -139,6 +139,24 @@
                 <router-link tag="p" to="/zuosi4">1</router-link>
               </el-menu-item>
             </el-submenu>
+
+             <el-submenu index="5">
+              <template slot="title">
+                <i class="el-icon-setting"></i>财务管理
+              </template>
+              <el-menu-item index="5-1">
+                <router-link tag="p" to="/zuowu1">1</router-link>
+              </el-menu-item>
+              <el-menu-item index="5-2">
+                <router-link tag="p" to="/zuowu2">1</router-link>
+              </el-menu-item>
+              <el-menu-item index="5-3">
+                <router-link tag="p" to="">1</router-link>
+              </el-menu-item>
+              <el-menu-item index="5-4">
+                <router-link tag="p" to="">1</router-link>
+              </el-menu-item>
+            </el-submenu>
           </el-menu>
         </el-aside>
 
@@ -171,6 +189,10 @@ export default {
 };
 </script>
 <style>
+.el-aside{
+  width: 25%;
+}
+
 .el-header {
   background-color: #b3c0d1;
   color: #333;
