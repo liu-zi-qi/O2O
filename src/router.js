@@ -97,6 +97,18 @@ export default new Router({
                 path: "/zuowu2",
                 component: () =>
                     import ('./components/zuowu/zuowu2.vue')
+            }, {
+                path: "/zuowu3",
+                component: () =>
+                    import ('./components/zuowu/zuowe3.vue')
+            }, {
+                path: "/zuowu4",
+                component: () =>
+                    import ('./components/zuowu/zuowu4.vue')
+            }, {
+                path: "/zuoliu1",
+                component: () =>
+                    import ('./components/zuoliu/zuoliu1.vue')
             }
         ]
     }]

@@ -151,9 +151,26 @@
                 <router-link tag="p" to="/zuowu2">1</router-link>
               </el-menu-item>
               <el-menu-item index="5-3">
-                <router-link tag="p" to="">1</router-link>
+                <router-link tag="p" to="/zuowu3">1</router-link>
               </el-menu-item>
               <el-menu-item index="5-4">
+                <router-link tag="p" to="/zuowu4">1</router-link>
+              </el-menu-item>
+            </el-submenu>
+             <el-submenu index="6">
+              <template slot="title">
+                <i class="el-icon-setting"></i>财务管理
+              </template>
+              <el-menu-item index="6-1">
+                <router-link tag="p" to="/zuoliu1">1</router-link>
+              </el-menu-item>
+              <el-menu-item index="6-2">
+                <router-link tag="p" to="">1</router-link>
+              </el-menu-item>
+              <el-menu-item index="6-3">
+                <router-link tag="p" to="">1</router-link>
+              </el-menu-item>
+              <el-menu-item index="6-4">
                 <router-link tag="p" to="">1</router-link>
               </el-menu-item>
             </el-submenu>
