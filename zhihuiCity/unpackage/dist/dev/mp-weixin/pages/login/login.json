@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "智慧城市",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "xy-dialog": "/components/xy-dialog/xy-dialog"
+  }
+}

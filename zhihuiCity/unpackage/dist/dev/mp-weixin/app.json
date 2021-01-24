@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/sjsb/sjsb",
+    "pages/me/me",
+    "pages/index/rwList"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "智慧城市",
+    "navigationBarBackgroundColor": "#4AD79E",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/index.png",
+        "selectedIconPath": "static/index2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/sjsb/sjsb",
+        "iconPath": "./static/relationship%20(1).png",
+        "selectedIconPath": "static/relationship.png",
+        "text": "事件上报"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "static/setting%20(1).png",
+        "selectedIconPath": "static/setting.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
